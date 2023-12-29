@@ -1,0 +1,118 @@
+body {
+    background-image: url('resimler/bg.png');
+    font-family: Calibri, Arial;
+    font-size: 14px;
+    color:#444;
+    padding: 30px;
+}
+
+header {
+    padding: 30px;
+    background-color: white;
+}
+
+header > img {
+    width:100%;
+    margin-top: 10px;
+}
+
+nav {
+    background-color: white;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+nav a:link {
+    color:#007dae;
+    font-size:20px;
+    text-decoration: none;
+    background-color: #C5DAF1;
+    font-weight: bold;
+    padding: 5px 20px;
+    display: inline-block;
+}
+
+nav a:visited {
+    color:#007dae;
+}
+
+nav a:hover {
+    background-color: #8eb2d8;
+    text-decoration: underline;
+}
+
+main {
+    background-color: white;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: Garamond, Calibri;
+}
+
+h1 {
+    color:#004774;
+    font-size:35px;
+    border-bottom-width: 4px;
+    border-bottom-style: dotted;
+    border-bottom-color: #35a4e9;
+}
+
+h2 {
+    color:#ed7000;
+    font-size:25px;
+}
+
+
+section#bilgi p {
+    color:black;
+    font-size: 20px;
+    font-style: italic;
+    background-color: #efefef;
+    padding:10px;
+}
+
+article img {
+    width: 300px;
+    border: 1px solid grey;
+    padding: 3px;
+}
+
+article img.buyuk {
+    width:100%;
+}
+
+article p.baglanti {
+    text-align: right;
+}
+
+article a:link {
+    font-size: 15px;
+    background-color:#ed7000;
+    color: #382107;
+    text-decoration: none;
+    padding:5px 20px;
+}
+
+article a:visited {
+    color: #382107;
+}
+
+article a:hover {
+    background-color: #382107;
+    color:white;
+}
+
+footer {
+    background-color: #b8b8b8;
+    color:#646464;
+    text-align: center;
+    font-style: italic;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 10px;
+}
+
+

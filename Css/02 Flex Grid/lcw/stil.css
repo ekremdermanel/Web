@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  background-color: darkred;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+}
+
+nav ul a:hover {
+  background-color: red;
+}
+
+main {
+  margin: 10px 0;
+}
+
+#kampanyalar {
+  display: flex;
+  gap: 10px;
+}
+
+#kampanyalar > #kampanya-1 {
+  flex: 3;
+}
+
+#kampanyalar > #kampanya-2 {
+  flex: 2;
+}
+
+#kampanyalar img {
+  width: 100%;
+  display: block;
+  height: 100%;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00539b;
+  font-size: 0.8em;
+}
+
+footer > div {
+  color: white;
+  width: 200px;
+  text-align: center;
+}
+
+
+#urunler {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap:20px;
+}
+
+#urunler a {
+  text-decoration: none;
+  color:inherit;
+}
+
+#urunler a:hover .card{
+  background-color: lightgray;
+}
+
+.card {
+  border:1px solid gray;
+  padding: 5px;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card .card-text {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top:10px;
+}
+
+.card .card-text .fiyat {
+  background-color:aquamarine;
+  border-radius: 5px;
+  padding: 5px;
+}

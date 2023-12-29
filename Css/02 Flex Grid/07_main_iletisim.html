@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    .container {
+      display: flex;
+      margin: 20px 0;
+      gap: 20px;
+    }
+
+    .container section.iletisim {
+      flex-grow: 1;
+      flex-basis: 0;
+      background-color: lightgray;
+      padding: 10px;
+    }
+
+    form div {
+      margin-bottom: 5px;
+    }
+
+    form label,
+    form input.form-girisi,
+    form textarea.form-girisi {
+      display: block;
+      box-sizing: border-box;
+      width: 100%;
+    }
+
+    form textarea.form-girisi {
+      font-family: Arial;
+      height: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Ana Bölüm - İletişim</h1>
+  <main>
+    <div class="container">
+      <section class="iletisim">
+        <h3>İletişim Bilgileri</h3>
+        <p>Adres</p>
+        <p>Telefon</p>
+      </section>
+
+      <section class="iletisim">
+        <h3>İletişim Formu</h3>
+        <form>
+          <div><label for="konu">Konu</label></div>
+          <div><input type="text" name="konu" id="konu" class="form-girisi" /></div>
+          <div><label for="mesaj">Mesaj</label></div>
+          <div><textarea name="mesaj" id="mesaj" class="form-girisi"></textarea></div>
+          <div><input type="submit" value="Tamam" /></div>
+        </form>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>

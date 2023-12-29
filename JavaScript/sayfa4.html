@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Java Script</title>
+  </head>
+  <body>
+    <input type="text" name="text1" id="text1" placeholder="Sayı 1 Gir" />
+    <input type="text" name="text2" id="text2" placeholder="Sayı 2 Gir" />
+    <button onclick="topla()">Topla</button>
+    <button onclick="cikar()">Çıkar</button>
+    <p id="paragraf1">Sonuç</p>
+
+    <script>
+      function topla() {
+        var s1 = Number(document.getElementById("text1").value);
+        var s2 = Number(document.getElementById("text2").value);
+        var sonuc = s1 + s2;
+
+        var paragraf1 = document.getElementById("paragraf1");
+        paragraf1.style.backgroundColor = "green";
+        paragraf1.style.color = "white";
+        paragraf1.style.fontWeight = "bold";
+        paragraf1.style.padding = "10px";
+        paragraf1.innerText = "Toplam: " + sonuc;
+      }
+
+      function cikar() {
+        var s1 = Number(document.getElementById("text1").value);
+        var s2 = Number(document.getElementById("text2").value);
+
+        if (s1 >= s2) {
+          var sonuc = s1 - s2;
+        } else {
+          var sonuc = s2 - s1;
+        }
+
+        var paragraf1 = document.getElementById("paragraf1");
+        paragraf1.style.backgroundColor = "red";
+        paragraf1.style.color = "white";
+        paragraf1.style.fontWeight = "bold";
+        paragraf1.style.padding = "10px";
+        paragraf1.innerText = "Fark: " + sonuc;
+      }
+    </script>
+  </body>
+</html>

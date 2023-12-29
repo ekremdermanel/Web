@@ -1,0 +1,11 @@
+body {
+  background-color: aqua;
+}
+
+#son {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding:20px;
+  border: 1px solid red;
+}

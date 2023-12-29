@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    #bolum-urunler {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      gap: 20px;
+    }
+
+    #bolum-urunler .card {
+      border: 1px solid lightgray;
+      padding-bottom: 10px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    #bolum-urunler .card img {
+      width: 100%;
+    }
+
+    #bolum-urunler .card>h3,
+    #bolum-urunler .card>div {
+      padding-left: 10px;
+    }
+
+    #bolum-urunler .card>h3>a {
+      text-decoration: none;
+      color: darkred;
+    }
+
+    #bolum-urunler .card>h3>a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Ana Bölüm - Ürünler</h1>
+  <main>
+    <section id="bolum-urunler">
+      <div class="card">
+        <img src="resimler/resim.png" alt="" />
+        <h3><a href="#">Ürün</a></h3>
+        <div>100 TL</div>
+      </div>
+
+      <div class="card">
+        <img src="resimler/resim.png" alt="" />
+        <h3><a href="#">Ürün</a></h3>
+        <div>100 TL</div>
+      </div>
+
+      <div class="card">
+        <img src="resimler/resim.png" alt="" />
+        <h3><a href="#">Ürün</a></h3>
+        <div>100 TL</div>
+      </div>
+
+      <div class="card">
+        <img src="resimler/resim.png" alt="" />
+        <h3><a href="#">Ürün</a></h3>
+        <div>100 TL</div>
+      </div>
+
+      <div class="card">
+        <img src="resimler/resim.png" alt="" />
+        <h3><a href="#">Ürün</a></h3>
+        <div>100 TL</div>
+      </div>
+
+      <div class="card">
+        <img src="resimler/resim.png" alt="" />
+        <h3><a href="#">Ürün</a></h3>
+        <div>100 TL</div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

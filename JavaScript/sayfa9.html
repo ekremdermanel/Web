@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Döngüler</title>
+    <style>
+      span {
+        background-color: red;
+        color: white;
+        margin-left: 10px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <p><button onclick="dongu1()">Döngü 1</button></p>
+    <p id="paragraf1"></p>
+    <p><button onclick="dongu2()">Döngü 2</button></p>
+    <p id="paragraf2"></p>
+    <p><button onclick="dongu3()">Döngü 3</button></p>
+
+    <script>
+      function dongu1() {
+        var paragraf1 = document.getElementById("paragraf1");
+        paragraf1.innerText = "";
+
+        for (let i = 0; i < 20; i++) {
+          paragraf1.innerText += " " + i;
+        }
+      }
+
+      function dongu2() {
+        var paragraf2 = document.getElementById("paragraf2");
+        paragraf2.innerHTML = "";
+
+        for (let i = 0; i < 20; i++) {
+          paragraf2.innerHTML += "<span>" + i + "</span>";
+        }
+      }
+
+      function dongu3() {
+        var spanlar = document.getElementById("paragraf2").getElementsByTagName("span");
+        for (let i = 0; i < spanlar.length; i++) {
+          spanlar[i].style.backgroundColor = "blue";
+        }
+      }
+    </script>
+  </body>
+</html>

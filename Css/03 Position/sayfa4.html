@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personel</title>
+    <style>
+      main {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 20px;
+      }
+
+      .card {
+        background-color: #333;
+
+        text-align: center;
+        color: white;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        position: relative;
+      }
+
+      .card-arkaplan {
+        height: 150px;
+        background-image: url(personel-resimleri/binalar.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+
+      .card .adsoyad {
+        font-size: 1.3em;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      .card hr {
+        width: 80%;
+      }
+
+      .card .resim {
+        width: 100px;
+        height: 100px;
+        margin-top: -50px;
+        border-radius: 50%;
+        border: 2px solid white;
+      }
+
+      .card .odul {
+        width: 40px;
+        height: 50px;
+        background-image: url(personel-resimleri/odul.png);
+        background-size: 100% 100%;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: red;
+        font-weight: bold;
+        padding-top: 10px;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <div class="card-arkaplan"></div>
+        <img src="personel-resimleri/personel-1.jpg" alt="" class="resim" />
+        <h3 class="adsoyad">Ayşe Kara</h3>
+        <div class="departman">Satış Pazarlama</div>
+        <hr />
+        <div class="odul">3</div>
+      </div>
+
+      <div class="card">
+        <div class="card-arkaplan"></div>
+        <img src="personel-resimleri/personel-2.jpg" alt="" class="resim" />
+        <h3 class="adsoyad">Ali Şimşek</h3>
+        <div class="departman">Satış Pazarlama</div>
+        <hr />
+        <div class="odul">1</div>
+      </div>
+
+      <div class="card">
+        <div class="card-arkaplan"></div>
+        <img src="personel-resimleri/personel-3.jpg" alt="" class="resim" />
+        <h3 class="adsoyad">Aslı Sarızeybekoğlu</h3>
+        <div class="departman">Satış Pazarlama</div>
+        <hr />
+      </div>
+
+      <div class="card">
+        <div class="card-arkaplan"></div>
+        <img src="personel-resimleri/personel-4.jpg" alt="" class="resim" />
+        <h3 class="adsoyad">Mehmet Ali Kara</h3>
+        <div class="departman">Satış Pazarlama</div>
+        <hr />
+        <div class="odul">2</div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      div {
+         background-color: lightblue;
+         margin: 10px;
+         padding: 10px;
+      }
+
+      #mesajlar div {
+         background-color: slategray;
+         color:lightgray;
+      }
+
+   </style>
+</head>
+<body onload="document.getElementById('mesaj').focus();">
+   <div>
+      <input type="text" id="mesaj" onkeyup="bas()">
+      <button onclick="gonder()">Gönder</button>
+      <span id="uyari"></span>
+   </div>
+
+   <div id="mesajlar">
+      
+   </div>
+
+   
+   <script>
+      function gonder() {
+         document.getElementById("uyari").innerText = "";
+         var yazi = document.getElementById("mesaj").value;
+         
+         if(yazi=="")
+         {
+            document.getElementById("uyari").innerText = "Boş bırakılamaz!";
+            return;
+         }
+         document.getElementById("mesajlar").innerHTML += "<div>" + yazi + "</div>"
+         document.getElementById("mesaj").value="";
+         document.getElementById("mesaj").focus();
+      }
+
+      function bas() {
+         if(event.keyCode == 13)
+         {
+            gonder();
+         }
+      }
+   </script>
+</body>
+</html>

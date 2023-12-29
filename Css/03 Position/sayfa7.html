@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kampanya</title>
+    <style>
+      main {
+        background-color: lightgreen;
+        width: 80%;
+        padding: 20px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+      }
+
+      .card {
+        position: relative;
+      }
+
+      .card img {
+        display: block;
+        width: 100%;
+      }
+
+      .card .secenekler {
+        padding: 5px;
+        box-sizing: border-box;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        gap: 5px;
+      }
+
+      .card .secenekler div {
+        background-color: white;
+        border: 1px solid black;
+        padding: 5px;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <img src="kampanya-resimleri/converse.jpg" alt="" />
+        <div class="secenekler">
+          <div>İndirim Kuponu</div>
+          <div>Ücretsiz Kargo</div>
+          <div>Fırsat Ürünü</div>
+          <div>Hızlı Teslimat</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="kampanya-resimleri/adidas.jpg" alt="" />
+        <div class="secenekler">
+          <div>Ücretsiz Kargo</div>
+          <div>Hızlı Teslimat</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="kampanya-resimleri/nike.jpg" alt="" />
+        <div class="secenekler">
+          <div>Ücretsiz Kargo</div>
+          <div>Fırsat Ürünü</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="kampanya-resimleri/puma.jpg" alt="" />
+        <div class="secenekler">
+          <div>Fırsat Ürünü</div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

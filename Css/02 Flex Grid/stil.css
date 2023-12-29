@@ -1,0 +1,199 @@
+header {
+  background-color: goldenrod;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header #logo {
+  width: 200px;
+}
+
+header h3 {
+  font-family: Georgia, "Times New Roman";
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: rgba(0, 0, 0, 0.3) 1px 1px 3px;
+}
+
+
+
+
+
+nav {
+  background-color: #333;
+}
+
+nav>ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav>ul a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+}
+
+nav>ul a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
+
+footer {
+  background-color: #333;
+  color: #aaa;
+  padding: 30px 0;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+
+aside {
+  background-color: lightgray;
+  padding: 20px;
+}
+
+aside #bolum-arama form {
+  display: flex;
+}
+
+aside #bolum-kategoriler ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+aside #bolum-kategoriler ul li {
+  border-bottom: 1px dotted #333;
+  padding: 10px 0;
+}
+
+aside #bolum-kategoriler a {
+  text-decoration: none;
+  color: darkred;
+}
+
+aside #bolum-kategoriler a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+#bolum-gonderiler .card {
+  border: 1px solid lightgray;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+#bolum-gonderiler .card img {
+  width: 25%;
+  min-width: 100px;
+}
+
+#bolum-gonderiler .card .card-text {
+  padding-left: 20px;
+  flex-grow: 1;
+}
+
+#bolum-gonderiler .card .card-text a {
+  text-decoration: none;
+  color: darkred;
+}
+
+#bolum-gonderiler .card .card-text a:hover {
+  text-decoration: underline;
+}
+
+
+
+#bolum-urunler {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+}
+
+#bolum-urunler .card {
+  border: 1px solid lightgray;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#bolum-urunler .card img {
+  width: 100%;
+}
+
+#bolum-urunler .card>h3,
+#bolum-urunler .card>div {
+  padding-left: 10px;
+}
+
+#bolum-urunler .card>h3>a {
+  text-decoration: none;
+  color: darkred;
+}
+
+#bolum-urunler .card>h3>a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+.container {
+  display: flex;
+  margin: 20px 0;
+  gap: 20px;
+}
+
+.container main {
+  flex-grow: 3;
+}
+
+.container aside {
+  flex-grow: 1;
+}
+
+
+.container section.iletisim {
+  flex-grow: 1;
+  flex-basis: 0;
+  background-color: lightgray;
+  padding: 10px;
+}
+
+form div {
+  margin-bottom: 5px;
+}
+
+form label,
+form input.form-girisi,
+form textarea.form-girisi {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+form textarea.form-girisi {
+  font-family: Arial;
+  height: 100px;
+}

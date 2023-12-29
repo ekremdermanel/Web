@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+   <meta charset="UTF-8">
+   <title>Kayıt</title>
+</head>
+<body>
+   <h1>Kayıt Formu</h1>
+   <form action="" autocomplete="off">
+      <p>
+         <label for="eposta">Eposta</label>
+         <input type="email" name="eposta" id="eposta" required autofocus>
+      </p>
+      <p>
+         <label for="sifre">Şifre</label>
+         <input type="password" name="sifre" id="sifre" pattern=".{6,}" title="En az 6 karakter" required>
+      </p>
+      <p>
+         Avatar seçimi<br>
+         <input type="radio" name="avatar" id="avatar1" checked>
+         <label for="avatar1"><img src="avatar/avatar_01.png" width="70" alt=""></label> 
+
+         <input type="radio" name="avatar" id="avatar2">
+         <label for="avatar2"><img src="avatar/avatar_02.png" width="70" alt=""></label>
+
+         <input type="radio" name="avatar" id="avatar3">
+         <label for="avatar3"><img src="avatar/avatar_03.png" width="70" alt=""></label>
+
+         <input type="radio" name="avatar" id="avatar4">
+         <label for="avatar4"><img src="avatar/avatar_04.png" width="70" alt=""></label>
+
+         <input type="radio" name="avatar" id="avatar5">
+         <label for="avatar5"><img src="avatar/avatar_05.png" width="70" alt=""></label>
+      </p>
+      <p>
+         <input type="checkbox" name="kural" id="kural"> Kuralları kabul ediyorum
+      </p>
+      <p>
+         <button onclick="alert('Kuralları kabul ettiniz...')">
+            <img src="button/soru.png" width="15" alt="" >
+            Kuralları okudum, kabul ediyorum
+         </button>
+      </p>
+      <p>
+         <button type="submit" title="Gönder">
+            <img src="button/tamam.png" width="50" alt="">
+         </button>
+         <button type="reset" title="İptal">
+            <img src="button/iptal.png" width="50" alt="">
+         </button>
+      </p>
+   </form>
+</body>
+</html>

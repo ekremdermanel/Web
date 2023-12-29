@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayakkabı</title>
+</head>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  main {
+    background-color: #333;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+    padding: 10px;
+  }
+
+  main a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    position: relative;
+  }
+
+  .card>img {
+    display: block;
+    height: 200px;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .card>.urun-adi,
+  .card>.urun-fiyati {
+    padding: 0 10px;
+  }
+
+  .card>.urun-fiyati {
+    color: darkorange;
+    font-weight: bold;
+  }
+
+  .card>.urun-fiyati del {
+    color: gray;
+  }
+
+  .card .indirim {
+    width: 90px;
+    height: 90px;
+    background-image: url(ayakkabi-resimleri/indirim.png);
+    background-size: 100% 100%;
+    position: absolute;
+    left: -5px;
+    top: -5px;
+  }
+
+  .card .tukendi {
+    position: absolute;
+    width: 100%;
+    top: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 0;
+  }
+
+  .card .simgeler {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 5px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+
+  .card .simgeler>div {
+    width: 40px;
+    height: 40px;
+    background-size: 100% 100%;
+  }
+
+  .card .avantajli-urun {
+    background-image: url(ayakkabi-resimleri/simge_avantajli_urun.png);
+  }
+
+  .card .yeni-urun {
+    background-image: url(ayakkabi-resimleri/simge_yeni_urun.png);
+  }
+
+  .card .en-cok-satan {
+    background-image: url(ayakkabi-resimleri/simge_en_cok_satan.png);
+  }
+
+  .card .iyi-fiyat {
+    background-image: url(ayakkabi-resimleri/simge_iyi_fiyat.png);
+  }
+
+  .card .simgeler>div.ucretsiz-kargo {
+    background-color: limegreen;
+    color: white;
+    width: auto;
+    height: auto;
+    font-size: 10px;
+    padding: 3px;
+    border-radius: 3px;
+  }
+
+  .card .simgeler>div.hizli-teslimat {
+    background-color: gray;
+    color: white;
+    width: auto;
+    height: auto;
+    font-size: 10px;
+    padding: 3px;
+    border-radius: 3px;
+  }
+
+  .card .simgeler>div.son-urun {
+    background-color: darkred;
+    color: white;
+    width: auto;
+    height: auto;
+    font-size: 10px;
+    padding: 3px;
+    border-radius: 3px;
+  }
+</style>
+
+<body>
+  <main>
+    <a href="#">
+      <div class="card">
+        <img src="ayakkabi-resimleri/puma01.jpg" alt="" />
+        <h3 class="urun-adi">Ayakkabı</h3>
+        <div class="urun-fiyati"><del>1000 TL</del> 800 TL</div>
+        <div class="indirim"></div>
+        <div class="simgeler">
+          <div class="en-cok-satan"></div>
+          <div class="iyi-fiyat"></div>
+        </div>
+      </div>
+    </a>
+
+    <a href="#">
+      <div class="card">
+        <img src="ayakkabi-resimleri/puma02.jpg" alt="" />
+        <h3 class="urun-adi">Ayakkabı</h3>
+        <div class="urun-fiyati">1000 TL</div>
+        <div class="simgeler">
+          <div class="avantajli-urun"></div>
+          <div class="yeni-urun"></div>
+          <div class="en-cok-satan"></div>
+          <div class="iyi-fiyat"></div>
+          <div class="son-urun">Son 5 Ürün</div>
+          <div class="ucretsiz-kargo">Ücretsiz Kargo</div>
+        </div>
+      </div>
+    </a>
+
+    <a href="#">
+      <div class="card">
+        <img src="ayakkabi-resimleri/puma03.jpg" alt="" />
+        <h3 class="urun-adi">Ayakkabı</h3>
+        <div class="urun-fiyati">1000 TL</div>
+        <div class="tukendi">Tükendi</div>
+      </div>
+    </a>
+
+    <a href="#">
+      <div class="card">
+        <img src="ayakkabi-resimleri/puma04.jpg" alt="" />
+        <h3 class="urun-adi">Ayakkabı</h3>
+        <div class="urun-fiyati">1000 TL</div>
+        <div class="simgeler">
+          <div class="en-cok-satan"></div>
+          <div class="son-urun">Son 3 Ürün</div>
+        </div>
+      </div>
+    </a>
+
+    <a href="#">
+      <div class="card">
+        <img src="ayakkabi-resimleri/puma05.jpg" alt="" />
+        <h3 class="urun-adi">Ayakkabı</h3>
+        <div class="urun-fiyati">1000 TL</div>
+        <div class="simgeler">
+          <div class="avantajli-urun"></div>
+          <div class="yeni-urun"></div>
+          <div class="hizli-teslimat">Hızlı Teslimat</div>
+        </div>
+      </div>
+    </a>
+
+    <a href="#">
+      <div class="card">
+        <img src="ayakkabi-resimleri/puma06.jpg" alt="" />
+        <h3 class="urun-adi">Ayakkabı</h3>
+        <div class="urun-fiyati"><del>1000 TL</del> 800 TL</div>
+        <div class="indirim"></div>
+        <div class="simgeler">
+          <div class="en-cok-satan"></div>
+          <div class="iyi-fiyat"></div>
+          <div class="ucretsiz-kargo">Ücretsiz Kargo</div>
+          <div class="hizli-teslimat">Hızlı Teslimat</div>
+        </div>
+        <div class="tukendi">Tükendi</div>
+      </div>
+    </a>
+  </main>
+</body>
+
+</html>

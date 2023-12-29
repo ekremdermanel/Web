@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diziler</title>
+    <style>
+      .kapsayici {
+        background-color: gray;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .kapsayici > div {
+        background-color: lightblue;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="listele()">Listele</button>
+    <button onclick="ekle()">Ekle</button>
+
+    <div class="kapsayici"></div>
+
+    <script>
+      var sehirler = ["İstanbul", "Ankara", "İzmir", "Erzurum", "Hatay"];
+      var kapsayici = document.getElementsByClassName("kapsayici")[0];
+
+      function listele() {
+        for (let i = 0; i < sehirler.length; i++) {
+          kapsayici.innerHTML += "<div>" + sehirler[i] + "</div>";
+        }
+      }
+
+      function ekle() {
+        var rastgele = Math.floor(Math.random() * sehirler.length);
+        kapsayici.innerHTML += "<div>" + sehirler[rastgele] + "</div>";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      #no {
+        width: 50px;
+      }
+
+      .kapsayici {
+        background-color: gray;
+        gap: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+      }
+
+      .kapsayici div {
+        background-color: lightblue;
+        padding: 20px;
+      }
+
+      .card {
+        width: 300px;
+        padding: 2px;
+        border: 1px solid gray;
+      }
+
+      .card img {
+        height: 250px;
+      }
+
+      .card p {
+        text-align: center;
+      }
+
+      #foto {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <p><input type="number" id="sayi" value="1" /> tane <button onclick="ekle()">Ekle</button></p>
+
+    <div class="kapsayici"></div>
+
+    <!-- <div class="card">
+        <img src="fotograflar/foto1.png" alt="" id="foto">
+        <p>Dağ Manzara</p>
+    </div> -->
+
+    <script>
+      var fotolar = ["foto1.png", "foto2.png", "foto3.png", "foto4.png", "foto5.png"];
+      var isimler = ["Dağ Manzarası", "Roket Atışı", "Fırtına Fotoğrafı", "Kuş", "Baykuş"];
+
+      var div = document.getElementsByClassName("kapsayici")[0];
+      function ekle() {
+        var sayi = Number(document.getElementById("sayi").value);
+
+        for (let i = 0; i < sayi; i++) {
+          var random = Math.floor(Math.random() * fotolar.length);
+          div.innerHTML += "<div class='card'> <img src='fotograflar/" + fotolar[random] + "' id='foto'> <p>" + isimler[random] + "</p> </div>";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #galeri {
+      width: 800px;
+      height: 400px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    #galeri img {
+      width: 800px;
+      height: 400px;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    #dugmeler {
+      width: 800px;
+      margin: 10px auto;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <div id="galeri">
+      <img src="fotograflar/foto1.png" alt="" id="foto1" />
+      <img src="fotograflar/foto2.png" alt="" id="foto2" />
+      <img src="fotograflar/foto3.png" alt="" id="foto3" />
+      <img src="fotograflar/foto4.png" alt="" id="foto4" />
+      <img src="fotograflar/foto5.png" alt="" id="foto5" />
+    </div>
+
+    <div id="dugmeler">
+      <button onclick="goster('foto1')">1</button>
+      <button onclick="goster('foto2')">2</button>
+      <button onclick="goster('foto3')">3</button>
+      <button onclick="goster('foto4')">4</button>
+      <button onclick="goster('foto5')">5</button>
+    </div>
+
+    <script>
+      function goster(foto) {
+        document.getElementById("foto1").style.zIndex = 0;
+        document.getElementById("foto2").style.zIndex = 0;
+        document.getElementById("foto3").style.zIndex = 0;
+        document.getElementById("foto4").style.zIndex = 0;
+        document.getElementById("foto5").style.zIndex = 0;
+        document.getElementById(foto).style.zIndex = 1;
+      }
+    </script>
+  </body>
+</html>

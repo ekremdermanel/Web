@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      <input type="text" name="puan1" id="puan1" placeholder="Puan 1 Giriniz" />
+      <input type="text" name="puan2" id="puan2" placeholder="Puan 2 Giriniz" />
+      <button onclick="hesapla()">Hesapla</button>
+    </p>
+    <p id="sonuc"></p>
+    <p id="basari"></p>
+
+    <script>
+      function hesapla() {
+        var sayi1 = Number(document.getElementById("puan1").value);
+        var sayi2 = Number(document.getElementById("puan2").value);
+        var ort = (sayi1 + sayi2) / 2;
+        document.getElementById("sonuc").innerText = "Ortalama: " + ort;
+
+        var basari = document.getElementById("basari");
+        if (ort < 50) {
+          basari.innerText = "Başarısız";
+        } else if (ort < 70) {
+          basari.innerText = "Orta";
+        } else {
+          basari.innerText = "Başarılı";
+        }
+      }
+    </script>
+  </body>
+</html>

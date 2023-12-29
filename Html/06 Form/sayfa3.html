@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+   <meta charset="UTF-8">
+   <title>İş Başvuru Formu</title>
+   <script>
+      function okudum() {
+         alert("Okudum... Anladım...");
+         document.getElementById("tamam").disabled = false;
+      }
+   </script>
+</head>
+
+<body>
+   <h1>İş Başvuru Formu</h1>
+   <form action="kaydet.html">
+      <fieldset>
+         <legend>Kişisel Bilgiler</legend>
+         <p>
+            <label for="adsoyad">Ad Soyad</label><br>
+            <input type="text" id="adsoyad" name="adsoyad" placeholder="Ad Soyad giriniz" maxlength="20">
+         </p>
+         <p>
+            <label for="dtarihi">Doğum Tarihi</label><br>
+            <input type="date" name="dtarihi" id="dtarihi">
+         </p>
+         <p>
+            Cinsiyet <br>
+            <input type="radio" name="cinsiyet" id="erkek" value="erkek" checked="on">
+            <label for="erkek">Erkek</label>
+            <input type="radio" name="cinsiyet" id="kadin" value="kadın">
+            <label for="erkek">Kadın</label>
+         </p>
+      </fieldset>
+      <fieldset>
+         <legend>İletişim Bilgileri</legend>
+         <p>
+            <label for="eposta">Eposta</label><br>
+            <input type="email" name="eposta" id="eposta" placeholder="Eposta giriniz">
+         </p>
+         <p>
+            <label for="telefon">Telefon</label><br>
+            <input type="tel" name="telefon" id="telefon" placeholder="0555 555 55 55">
+         </p>
+         <p>
+            <label for="sehir">Şehir</label><br>
+            <select name="sehir" id="sehir">
+               <option value="">Seçiniz</option>
+               <option value="34" selected="on">İstanbul</option>
+               <option value="41">Kocaeli</option>
+            </select>
+         </p>
+         <p>
+            <label for="ilce">İlçe</label><br>
+            <input list="ilceler">
+            <datalist id="ilceler">
+               <option value="Kadıköy">Kadıköy (İstanbul)</option>
+               <option value="Pendik">Pendik (İstanbul)</option>
+               <option value="Çankaya">Çankaya (Ankara)</option>
+               <option value="Keçiören">Keçiören (Ankara)</option>
+            </datalist>
+         </p>
+         <p>
+            <label for="adres">Adres</label><br>
+            <textarea name="adres" id="adres" cols="30" rows="5"></textarea>
+         </p>
+         <p>
+            <label for="website">Web sitesi</label><br>
+            <input type="url" name="website" id="website" placeholder="Web site adresi">
+         </p>
+      </fieldset>
+      <fieldset>
+         <legend>Kariyer Bilgileri</legend>
+         <p>
+            <label for="birim">Başvurduğunuz birim</label><br>
+            <input type="text" name="birim" id="birim" value="Satış / Pazarlama" disabled="on">
+         </p>
+         <p>
+            <label for="tecrube">İş tecrübesi</label><br>
+            <input type="number" name="tecrube" id="tecrube" min="0" max="20" value="0"> yıl
+         </p>
+         <p>
+            <label for="seviye">Yabancı dil seviyesi</label><br>
+            <input type="range" name="seviye" id="seviye" min="0" max="10" value="4" step="2">
+         </p>
+      </fieldset>
+      <fieldset>
+         <legend>Diğer Bilgiler</legend>
+         <p>
+            Hobiler<br>
+            <input type="checkbox" name="hobi1" id="kitap">
+            <label for="kitap">Kitap</label>
+            <input type="checkbox" name="hobi2" id="muzik">
+            <label for="muzik">Müzik</label>
+            <input type="checkbox" name="hobi3" id="sinema">
+            <label for="sinema">Sinema</label>
+         </p>
+         <p>
+            <label for="renk">Favori renk</label>
+            <input type="color" name="renk" id="renk">
+         </p>
+         <p>
+            <label for="fotograf">Fotoğraf yükle</label><br>
+            <input type="file" name="fotograf" id="fotograf">
+         </p>
+      </fieldset>
+      <p>
+         <input type="hidden" name="referansno" id="refereansno" value="ref101">
+         <input type="button" value="Okudum Anladım" onclick="okudum()">
+         <input type="submit" value="Tamam" id="tamam" disabled="on">
+         <input type="reset" value="Temizle">
+      </p>
+
+   </form>
+</body>
+
+</html>

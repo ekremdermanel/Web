@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LCW</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        padding: 20px;
+      }
+
+      #liste {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 20px;
+      }
+
+      #liste a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      #liste a:hover .card {
+        background-color: lightgray;
+      }
+
+      .card {
+        border: 1px solid gray;
+        padding: 5px;
+      }
+
+      .card img {
+        width: 100%;
+        display: block;
+      }
+
+      .card .card-text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+      }
+
+      .card .card-text .fiyat {
+        background-color: aquamarine;
+        border-radius: 5px;
+        padding: 5px;
+      }
+
+      .card .card-image {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 180px;
+      }
+
+      a:hover .card .card-image {
+        background-size: cover 150%;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section id="liste">
+        <a href="#">
+          <div class="card">
+            <div class="card-image" style="background-image: url('images/r1.jpg')"></div>
+            <div class="card-text">
+              <div class="urun">Kazak</div>
+              <div class="fiyat">20TL</div>
+            </div>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="card">
+            <div class="card-image" style="background-image: url('images/r2.jpg')"></div>
+            <div class="card-text">
+              <div class="urun">Kazak</div>
+              <div class="fiyat">20TL</div>
+            </div>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="card">
+            <div class="card-image" style="background-image: url('images/r3.jpg')"></div>
+            <div class="card-text">
+              <div class="urun">Kazak</div>
+              <div class="fiyat">20TL</div>
+            </div>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="card">
+            <div class="card-image" style="background-image: url('images/r4.jpg')"></div>
+            <div class="card-text">
+              <div class="urun">Kazak</div>
+              <div class="fiyat">20TL</div>
+            </div>
+          </div>
+        </a>
+      </section>
+    </main>
+  </body>
+</html>

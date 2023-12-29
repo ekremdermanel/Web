@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Java Script</title>
+    <style>
+      .mesaj {
+        font-size: 20px;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .olumlu {
+        background-color: lightgreen;
+        border: 1px solid green;
+      }
+
+      .olumsuz {
+        background-color: lightcoral;
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <p><input type="checkbox" onchange="kontrolEt()" name="check1" id="check1" /> Kabul ediyorum</p>
+    <p><input type="button" id="button1" value="Kayıt" onclick="alert('OK')" disabled /></p>
+    <p id="paragraf1" class="mesaj olumsuz">Kabul Etmediniz</p>
+
+    <script>
+      function kontrolEt() {
+        var check1 = document.getElementById("check1");
+        var button1 = document.getElementById("button1");
+        var paragraf1 = document.getElementById("paragraf1");
+
+        if (check1.checked) {
+          button1.removeAttribute("disabled");
+          paragraf1.classList.remove("olumsuz");
+          paragraf1.classList.add("olumlu");
+          paragraf1.innerText = "Kabul Ettiniz";
+        } else {
+          button1.setAttribute("disabled", "");
+          paragraf1.classList.remove("olumlu");
+          paragraf1.classList.add("olumsuz");
+          paragraf1.innerText = "Kabul Etmediniz";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>İnşaat</title>
+    <link rel="stylesheet" href="stil.css" />
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="assets/logo.png" alt="" />
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">ANA SAYFA</a></li>
+            <li><a href="hakkimizda.html">HAKKIMIZDA</a></li>
+            <li><a href="projeler.html">PROJELER</a></li>
+            <li><a href="iletisim.html" class="active">İLETİŞİM</a></li>
+            <li></li>
+            <li>
+              <a href="#" class="material-symbols-outlined simge">search</a>
+            </li>
+
+            <li>
+              <a href="#" class="material-symbols-outlined simge">shopping_cart</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="sayfa-basligi">
+        <div class="container">
+          <h1>İletişim</h1>
+          <div><a href="index.html">Ana Sayfa</a> / İletişim</div>
+        </div>
+      </section>
+
+      <section id="harita">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46128.49677134368!2d28.95395619116602!3d41.010531466166505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab9b8afa5f833%3A0x15aa1943c3015300!2zVG9wa2FwxLEgU2FyYXnEsSBNw7x6ZXNp!5e0!3m2!1str!2str!4v1701069037768!5m2!1str!2str"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+
+      <section id="iletisim">
+        <div class="ortala">
+          <h2 class="baslik-orta">
+            Bize Ulaşın
+            <hr />
+          </h2>
+        </div>
+
+        <div class="container">
+          <div id="iletisim-bilgileri">
+            <h3>İletişim Bilgileri</h3>
+            <p><span class="material-symbols-outlined simge">phone</span> 0216 4444444</p>
+            <p><span class="material-symbols-outlined simge">email</span> <a href="mailto:mail@insaat.com">mail@insaat.com</a></p>
+            <p><span class="material-symbols-outlined simge">home</span> İstanbul Türkiye</p>
+          </div>
+          <div id="iletisim-formu">
+            <h3>İletişim Formu</h3>
+            <form>
+              <div><input type="text" name="adsoyad" id="adsoyad" class="form-giris" placeholder="Ad Soyad" /></div>
+              <div><input type="email" name="eposta" id="eposta" class="form-giris" placeholder="E-posta" /></div>
+              <div><textarea name="mesaj" id="mesaj" cols="30" rows="10" class="form-giris" placeholder="Mesaj"></textarea></div>
+              <input type="submit" value="Gönder" class="form-button" />
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div>
+          <div><img src="assets/logo-light.png" alt="" /></div>
+          <p><span class="material-symbols-outlined simge">phone</span> 0216 4444444</p>
+          <p><span class="material-symbols-outlined simge">email</span> <a href="mailto:mail@insaat.com">mail@insaat.com</a></p>
+          <p><span class="material-symbols-outlined simge">home</span> İstanbul Türkiye</p>
+        </div>
+        <div>
+          <h3>Etiketler</h3>
+          <p id="etiketler">
+            <a href="#">İnşaat</a>
+            <a href="#">Mimari</a>
+            <a href="#">Tadilat</a>
+            <a href="#">Yenileme</a>
+            <a href="#">Peyzaj Mimarlığı</a>
+            <a href="#">Elektrik</a>
+            <a href="#">Projelendirme</a>
+            <a href="#">Bakım</a>
+            <a href="#">Onarım</a>
+            <a href="#">Mühendislik</a>
+          </p>
+        </div>
+        <div>
+          <h3>Bağlantılar</h3>
+          <ul id="linkler">
+            <li><a href="#">Ana Sayfa</a></li>
+            <li><a href="#">Hakkımızda</a></li>
+            <li><a href="#">Projeler</a></li>
+            <li><a href="#">İletişim</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Takip Edin</h3>
+          <p id="sosyal-medya">
+            <a href="#" class="fa fa-whatsapp"></a>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

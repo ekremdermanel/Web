@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    #container {
+      display: flex;
+    }
+
+    #kategoriler {
+      background-color: lightblue;
+      flex: 1;
+    }
+
+    #icerik {
+      background-color: lightcoral;
+      flex: 3;
+    }
+
+    #arama {
+      background-color: lightgreen;
+      flex: 1;
+    }
+
+    @media screen and (max-width: 900px) {
+      #container {
+        flex-wrap: wrap;
+      }
+
+      #kategoriler {
+        order: 2;
+        flex: 1;
+      }
+
+      #icerik {
+        order: 1;
+        flex: 2;
+      }
+
+      #arama {
+        order: 0;
+        flex: 100%;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      #container {
+        flex-direction: column;
+      }
+
+      #kategoriler {
+        order: 0;
+      }
+
+      #icerik {
+        order: 1;
+      }
+
+      #arama {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div id="kategoriler">
+      <h2>Kategoriler</h2>
+    </div>
+    <div id="icerik">
+      <h2>İçerik</h2>
+    </div>
+    <div id="arama">
+      <h2>Arama</h2>
+    </div>
+  </div>
+</body>
+
+</html>
